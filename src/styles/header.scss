@@ -1,0 +1,48 @@
+@use 'mixins.scss' as mix;
+
+.main-header {
+    width: 100%;
+    height: 68px;
+    padding: 0 60px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .header-left {
+        background-color: bisque;
+        @include mix.flex-items-center();
+
+        .logo {
+            width: 6rem;
+            margin-right: 25px;
+        }
+
+        ul {
+            display: flex;
+
+            .nav-item {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .header-right {
+        background-color: beige;
+        @include mix.flex-items-center();
+        justify-content: flex-end;
+
+        .nav-right {
+            margin-left: 20px;
+        }
+
+        .account-dropdown-button {
+            @include mix.flex-items-center();
+            .profile-image {
+                width: 40px;
+                height: 40px;
+                margin-right: 7px;
+                border: var(--test-border);
+            }
+        }
+    }
+}

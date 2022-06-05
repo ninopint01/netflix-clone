@@ -2,11 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Netflix Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.scss" />
-    <script type="module" src="scripts/index.js"></script>
+    <script type="module" src="scripts/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Netflix Clone</title>
 </head>
 <body>
-    <h1>Hello, Netflix!</h1>
+    <header class="main-header">
+        <div class="header-left">
+            <img src="assets/images/netflix-logo.png" alt="netflix-logo" class="logo">
+            <nav>
+                <ul>
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">TV Shows</a></li>
+                    <li class="nav-item"><a href="#">Movies</a></li>
+                    <li class="nav-item"><a href="#">New & Popular</a></li>
+                    <li class="nav-item"><a href="#">My List</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="nav-right">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="nav-right">
+                <a href="#">Kids</a>
+            </div>
+            <div class="nav-right">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="account-dropdown-button">
+                    <img src="assets/images//netflix-profile.png" alt="profile-image" class="profile-image">
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
